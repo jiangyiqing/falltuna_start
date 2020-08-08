@@ -1,0 +1,53 @@
+@host=localhost:8000
+
+
+### test
+GET http://{{host}}/
+
+
+### treq
+GET http://{{host}}/treq/jyq
+
+
+### qreq
+GET http://{{host}}/qreq?skip=0&limit=5
+
+
+
+### tpostreq
+POST http://{{host}}/tpostreq
+Content-Type: application/json
+
+{
+    "name": "jyq",
+    "age": "-1",
+    "classNo": {
+        "className": "m2",
+        "classType": "M"
+    }
+}
+
+
+### tpostreqc
+POST http://{{host}}/tpostreqc
+Content-Type: application/json
+
+{
+    "name": "jyq",
+    "age": "999",
+    "classNo": {
+        "className": "m2",
+        "classType": "M"
+    }
+}
+
+### form
+POST http://{{host}}/form 
+Content-Type: application/x-www-form-urlencoded
+
+name="jyq"
+&age=1
+
+
+### getimg
+GET http://{{host}}/getimg
