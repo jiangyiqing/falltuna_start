@@ -1,0 +1,93 @@
+2020-08-14 17:30:51,967 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 390, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 197, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 147, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 74, in qreqf
+    logger.debug('this is a debug message')
+NameError: name 'logger' is not defined
+2020-08-14 17:31:16,052 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 390, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 197, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 147, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 74, in qreqf
+    print(jyq)
+NameError: name 'jyq' is not defined
+2020-08-14 17:31:23,029 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/protocols/http/httptools_impl.py", line 390, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 197, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/Users/ngichingaij/.virtualenvs/fastapi/lib/python3.7/site-packages/fastapi/routing.py", line 147, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 74, in qreqf
+    print(jyq)
+NameError: name 'jyq' is not defined

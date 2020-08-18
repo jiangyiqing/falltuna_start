@@ -1,0 +1,13 @@
+@host=0.0.0.0:8000
+
+### check
+GET http://{{host}}/help
+
+### get-by-code
+GET http://{{host}}/xcx/get-by-code
+    ?code=a121
+
+
+### get-by-id
+GET http://{{host}}/xcx/get-by-id
+    ?id=1    

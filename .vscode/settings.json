@@ -10,6 +10,11 @@
     "python.linting.enabled": false,
     "python.linting.pycodestyleArgs": [
         "--ignore=E501",
-        "--ignore=E1101"
+        "--ignore=E1101",
     ],
+    "python.formatting.autopep8Args": [
+        "--ignore",
+        "E402"
+    ],
+    "workbench.colorTheme": "Solarized Light"
 }

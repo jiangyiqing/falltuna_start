@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+"""
+Pydantic schema
+"""
+# -*- coding: utf-8 -*-
 from typing import List, Optional
 
 from pydantic import BaseModel
@@ -24,7 +28,7 @@ class Article(BaseModel):
 
 class FtUser(UserBase):
     id: int
-    is_active: bool
+    is_active = bool
     articles: List[Article] = []
 
     class Config:
